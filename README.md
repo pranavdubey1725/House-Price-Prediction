@@ -1,29 +1,41 @@
-# 🏠 House Price Prediction
+# 🏡 House Price Prediction
 
-A simple machine learning project to predict house prices using **Linear Regression** and **Random Forest Regression**.
+A machine learning project to predict house prices using both **Random Forest** and **XGBoost** regression models.
 
-## 📁 Dataset
-- Kaggle’s Ames Housing Dataset
-- Contains features like lot size, house style, area, year built, etc.
+## 📌 Features
 
-## 🧠 Models Used
-- Linear Regression
-- Random Forest Regressor
+- Cleaned and preprocessed housing dataset
+- Feature engineering (`TotalBathrooms`)
+- One-hot encoding for categorical variables
+- Models used:
+  - Random Forest Regressor (with Hyperparameter Tuning using RandomizedSearchCV)
+  - XGBoost Regressor
+- Evaluation metrics: MAE, MSE, R² Score
+- Actual vs Predicted Plot
+- Trained models saved as `.pkl`
 
-## 🛠️ Features Engineered
-- Numeric: LotArea, GrLivArea, YearBuilt, etc.
-- Categorical: Neighborhood, HouseStyle (One-hot encoded)
+## 📊 Final Scores
 
-## 📊 Evaluation
-- MAE: ~18020  
-- R² Score: ~0.90
+| Model           | MAE      | MSE         | R² Score |
+|----------------|----------|-------------|----------|
+| Random Forest  | 18552.05 | 883M        | 0.8762   |
+| XGBoost        | 18822.98 | 844M        | 0.8816   |
 
-## 📂 Files Included
-- `HousePricePrediction.ipynb`: Complete notebook
-- `train.csv`: Dataset used
-- `random_forest_model.pkl`: Saved trained model
-- `requirements.txt`: Python dependencies
+## 🧠 Requirements
 
-## 🚀 To Run
-```bash
-pip install -r requirements.txt
+See `requirements.txt`.
+
+## 💾 Files
+
+- `HousePricePrediction.ipynb` - Full notebook
+- `random_forest_model.pkl` - Trained Random Forest model
+- `xgboost_model.pkl` - Trained XGBoost model
+- `train.csv` - Dataset
+- `requirements.txt` - Python dependencies
+
+---
+
+**Note:** This project is built in Google Colab.
+
+---
+
