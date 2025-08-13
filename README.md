@@ -1,41 +1,53 @@
-# 🏡 House Price Prediction
+House Price Prediction
+Overview
+Predict house prices using historical housing data.
 
-A machine learning project to predict house prices using both **Random Forest** and **XGBoost** regression models.
+Perform data cleaning, preprocessing, and feature engineering.
 
-## 📌 Features
+Apply machine learning models for regression tasks: Random Forest and XGBoost.
 
-- Cleaned and preprocessed housing dataset
-- Feature engineering (`TotalBathrooms`)
-- One-hot encoding for categorical variables
-- Models used:
-  - Random Forest Regressor (with Hyperparameter Tuning using RandomizedSearchCV)
-  - XGBoost Regressor
-- Evaluation metrics: MAE, MSE, R² Score
-- Actual vs Predicted Plot
-- Trained models saved as `.pkl`
+Evaluate model performance using industry-standard metrics.
 
-## 📊 Final Scores
+Save trained models for reuse.
 
-| Model           | MAE      | MSE         | R² Score |
-|----------------|----------|-------------|----------|
-| Random Forest  | 18552.05 | 883M        | 0.8762   |
-| XGBoost        | 18822.98 | 844M        | 0.8816   |
+Project Structure
+HousePricePrediction.ipynb – Notebook for data preprocessing, feature engineering, model training, and evaluation.
 
-## 🧠 Requirements
+train.csv – Dataset containing historical house price records.
 
-See `requirements.txt`.
+random_forest_model.pkl – Saved Random Forest trained model.
 
-## 💾 Files
+xgboost_model.pkl – Saved XGBoost trained model.
 
-- `HousePricePrediction.ipynb` - Full notebook
-- `random_forest_model.pkl` - Trained Random Forest model
-- `xgboost_model.pkl` - Trained XGBoost model
-- `train.csv` - Dataset
-- `requirements.txt` - Python dependencies
+requirements.txt – Python dependencies.
 
----
+Dataset Used
+train.csv — Housing dataset containing numerical and categorical features related to property size, location, and condition.
 
-**Note:** This project is built in Google Colab.
+Includes engineered feature: TotalBathrooms (combined total of full and half bathrooms).
 
----
+Categorical variables encoded using one-hot encoding.
 
+Models and Techniques
+Models:
+
+Random Forest Regressor (with hyperparameter tuning via RandomizedSearchCV)
+
+XGBoost Regressor
+
+Techniques: Feature Engineering, One-Hot Encoding, Model Evaluation
+
+Evaluation Metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), R² Score
+
+Final Scores:
+
+Model	MAE	MSE	R² Score
+Random Forest	18552.05	883M	0.8762
+XGBoost	18822.98	844M	0.8816
+
+Tech Stack
+Languages: Python
+
+Libraries: Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib
+
+Environment: Google Colab
