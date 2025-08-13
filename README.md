@@ -4,7 +4,7 @@ Predict house prices using historical housing data.
 
 Perform data cleaning, preprocessing, and feature engineering.
 
-Apply machine learning models for regression tasks: Random Forest and XGBoost.
+Apply machine learning regression models: Random Forest and XGBoost.
 
 Evaluate model performance using industry-standard metrics.
 
@@ -24,7 +24,7 @@ requirements.txt – Python dependencies.
 Dataset Used
 train.csv — Housing dataset containing numerical and categorical features related to property size, location, and condition.
 
-Includes engineered feature: TotalBathrooms (combined total of full and half bathrooms).
+Engineered feature: TotalBathrooms (combined total of full and half bathrooms).
 
 Categorical variables encoded using one-hot encoding.
 
